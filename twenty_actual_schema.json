@@ -1,0 +1,3433 @@
+{
+  "company": [
+    {
+      "column_name": "name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "domainNamePrimaryLinkLabel",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "domainNamePrimaryLinkUrl",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "domainNameSecondaryLinks",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "employees",
+      "data_type": "double precision",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedinLinkPrimaryLinkLabel",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedinLinkPrimaryLinkUrl",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedinLinkSecondaryLinks",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "xLinkPrimaryLinkLabel",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "xLinkPrimaryLinkUrl",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "xLinkSecondaryLinks",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "annualRecurringRevenueAmountMicros",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "annualRecurringRevenueCurrencyCode",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressStreet1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressStreet2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressCity",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressPostcode",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressState",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressCountry",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressLat",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "addressAddressLng",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "idealCustomerProfile",
+      "data_type": "boolean",
+      "nullable": false
+    },
+    {
+      "column_name": "position",
+      "data_type": "double precision",
+      "nullable": false
+    },
+    {
+      "column_name": "createdBySource",
+      "data_type": "USER-DEFINED",
+      "nullable": false
+    },
+    {
+      "column_name": "createdByWorkspaceMemberId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "createdByName",
+      "data_type": "text",
+      "nullable": false
+    },
+    {
+      "column_name": "createdByContext",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "searchVector",
+      "data_type": "tsvector",
+      "nullable": true
+    },
+    {
+      "column_name": "id",
+      "data_type": "uuid",
+      "nullable": false
+    },
+    {
+      "column_name": "createdAt",
+      "data_type": "timestamp with time zone",
+      "nullable": false
+    },
+    {
+      "column_name": "updatedAt",
+      "data_type": "timestamp with time zone",
+      "nullable": false
+    },
+    {
+      "column_name": "deletedAt",
+      "data_type": "timestamp with time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "accountOwnerId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "about_us",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "all_mails",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "all_phones",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "annual_revenue",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "campaign_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "close_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "company_keywords",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "company_owner",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "country_region_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "created_by_user_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "date_of_last_meeting_booked_in_meetings_tool",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "days_to_close",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "description",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "employee_range",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "facebook_company_page",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "facebook_fans",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_contact_create_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_conversion",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_conversion_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_deal_created_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_touch_converting_campaign",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "google_plus_page",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "has_been_enriched",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "hubspot_team",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ideal_customer_profile_tier",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "industry",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "industry_group",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "intent_signals_active",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "is_public",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "last_activity_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_booked_meeting_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_contacted",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_engagement_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_logged_call_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_logged_outgoing_email_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_open_task_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_touch_converting_campaign",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_data_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_data_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_timestamp",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lifecycle_stage",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedin_bio",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedin_handle",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "logo_url",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "main_contact_mail",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "main_contact_mail_v2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "medium_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "merged_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "next_activity_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_associated_contacts",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_associated_deals",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_blockers",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_child_companies",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_contacts_with_a_buying_role",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_decision_makers",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_form_submissions",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_open_deals",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_pageviews",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_sessions",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_times_contacted",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source_drill_down_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source_drill_down_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "owner_assigned_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "parent_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "phone_number",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "quick_context",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_conversion",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_conversion_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_deal_amount",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_deal_close_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_3",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "revenue_range",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "source_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "state_region_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "street_address",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "street_address_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "target_account",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "time_first_seen",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_last_seen",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_of_first_session",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_of_last_session",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_zone",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "total_money_raised",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "total_open_deal_value",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "total_revenue",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "twitter_bio",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "twitter_followers",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "twitter_handle",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "type",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "updated_by_user_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "web_technologies",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "website_url",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "year_founded",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "partner_client_with_primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_with_primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_ticket",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_session",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_partner_client",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_survey_response",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_task",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "cart_with_primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_call",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_meeting",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_lead",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "quotes_with_billing_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_invoice",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "billing_contact",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_subscription",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_postal_mail",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_with_primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_cart",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ticket_with_primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "parent_company1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_link",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_note",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_form_submission",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_quote",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_communication",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_email",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_with_primary_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "child_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_order",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sales_activity",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_customer_success_alert",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "partner_client_with_primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_with_primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_ticket_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_session_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_partner_client_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_survey_response_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_task_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "cart_with_primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_call_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_meeting_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_lead_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "quotes_with_billing_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_invoice_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "billing_contact_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_subscription_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_postal_mail_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_with_primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_cart_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ticket_with_primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "parent_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_link_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_note_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_form_submission_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_quote_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_communication_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_email_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_with_primary_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "child_company_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_order_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sales_activity_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_customer_success_alert_ids",
+      "data_type": "text",
+      "nullable": true
+    }
+  ],
+  "person": [
+    {
+      "column_name": "nameFirstName",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "nameLastName",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "emailsPrimaryEmail",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "emailsAdditionalEmails",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedinLinkPrimaryLinkLabel",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedinLinkPrimaryLinkUrl",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "linkedinLinkSecondaryLinks",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "xLinkPrimaryLinkLabel",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "xLinkPrimaryLinkUrl",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "xLinkSecondaryLinks",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "jobTitle",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "phonesPrimaryPhoneNumber",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "phonesPrimaryPhoneCountryCode",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "phonesPrimaryPhoneCallingCode",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "phonesAdditionalPhones",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "city",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "avatarUrl",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "position",
+      "data_type": "double precision",
+      "nullable": false
+    },
+    {
+      "column_name": "createdBySource",
+      "data_type": "USER-DEFINED",
+      "nullable": false
+    },
+    {
+      "column_name": "createdByWorkspaceMemberId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "createdByName",
+      "data_type": "text",
+      "nullable": false
+    },
+    {
+      "column_name": "createdByContext",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "searchVector",
+      "data_type": "tsvector",
+      "nullable": true
+    },
+    {
+      "column_name": "id",
+      "data_type": "uuid",
+      "nullable": false
+    },
+    {
+      "column_name": "createdAt",
+      "data_type": "timestamp with time zone",
+      "nullable": false
+    },
+    {
+      "column_name": "updatedAt",
+      "data_type": "timestamp with time zone",
+      "nullable": false
+    },
+    {
+      "column_name": "deletedAt",
+      "data_type": "timestamp with time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "companyId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "accepts_marketing",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "account_state",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "all_agents",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "annual_revenue",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "artificial_intelligence_rank",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "average_pageviews",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "branche__industry",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "buying_role",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "campaign_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "close_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "company_list",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "company_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "company_size",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_owner",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_unworked",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "country_region",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "country_region_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "created_by_user_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "currently_in_sequence",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "currently_in_workflow_discontinued",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "date_entered_exploration_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_entered_qualification_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_entered_retention_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_entered_unfit_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_entered_unknown_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_exited_exploration_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_exited_qualification_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_exited_retention_lifecycle_phasen_pipeline",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_exited_unfit_lifecycle_phasen_pipeline",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "date_exited_unknown_lifecycle_phasen_pipeline",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "date_of_birth",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "date_of_first_engagement",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "date_of_last_meeting_booked_in_meetings_tool",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "days_to_close",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "degree",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "description_of_first_engagement",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "domain_to_which_registration_email_was_sent",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ecommerce_contact",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "economic_research_institutions",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "email_address_automated_quarantine_reason",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "email_address_quarantine_reason",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "email_address_quarantined",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "email_confirmed",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "email_domain",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "email_hard_bounce_reason",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "employment_role",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "employment_seniority",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "employment_sub_role",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "enriched_email_bounce_detected_deprecated",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "enrichment_opt_out",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "enrichment_opt_out_timestamp",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "event_revenue",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "facebook_click_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "fax_number",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "field_of_study",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_closed_order_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_conversion",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_conversion_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_deal_created_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_marketing_email_click_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_marketing_email_open_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_marketing_email_reply_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_marketing_email_send_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "first_order_closed_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_page_seen",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_referring_site",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "first_touch_converting_campaign",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "form_of_address",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "gender",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "google_ad_click_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "graduation_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "gr\u00fcnderzentren",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "has_been_enriched",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "hubspot_score",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "hubspot_team",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "id_of_first_engagement",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "inferred_language_codes",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "innovation_rank",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "intent_signals_active",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "invalid_email_address",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "ip_city",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ip_country",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ip_country_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ip_state_code_region_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ip_state_region",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ip_timezone",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "job_function",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_activity_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_contacted",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_engagement_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_marketing_email_click_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_marketing_email_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_marketing_email_open_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_marketing_email_reply_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_marketing_email_send_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_page_seen",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_referring_site",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_sequence_ended_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_sequence_enrolled",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_sequence_enrolled_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "last_touch_converting_campaign",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_disqualified_lead_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_open_lead_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_qualified_lead_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_drill_down_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_drill_down_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_response_time_hhmmss",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "legal_basis_for_processing_contacts_data",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "letter_form_of_adress",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lifecycle_stage",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "main_agent",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "marital_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "marketing_email_confirmation_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "marketing_emails_bounced",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "marketing_emails_clicked",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "marketing_emails_delivered",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "marketing_emails_opened",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "marketing_emails_replied",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "medium_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "meeting_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "member_email",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "member_has_accessed_private_content",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "membership_last_private_content_access_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "membership_notes",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "merged_contact_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "message",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "military_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ministerien",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "mobile_phone_number",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "mobility_rank",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "next_activity_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "note",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_associated_deals",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_employees",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_event_completions",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_form_submissions",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_pageviews",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_sales_activities",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_sequences_enrolled",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_sessions",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_times_contacted",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_unique_forms_submitted",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "nuts0",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "nuts0_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "nuts1_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "nuts2_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "nuts3_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "opted_out_of_email_marketing_information",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "opted_out_of_email_one_to_one",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "orders_count",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source_drill_down_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source_drill_down_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "owner_assigned_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "persona",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "pers\u00f6nlicher_webseite_link",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "postal_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "preferred_language",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "prospecting_agent_last_enrolled",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "prospecting_agent_total_enrolled_count",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "quarantined_emails",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_closed_order_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_conversion",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_conversion_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_deal_amount",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_deal_close_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_sales_email_clicked_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_sales_email_opened_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "recent_sales_email_replied_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_3",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "registered_at",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "registered_member",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "registration_method",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "relationship_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "salutation",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "school",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "sector",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "sends_since_last_engagement",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "seniority",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "shopify_created_at",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "source_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "source_store",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "start_date",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "state_region",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "state_region_code",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "street_address",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "sustainability_rank",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "tags",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "tax_exempt",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "time_enrolled_in_registration_follow_up_emails",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "time_first_seen",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_last_seen",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_of_first_session",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_of_last_session",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "time_registration_email_was_sent",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "time_zone",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "total_revenue",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "twitter_username",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "type",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "type_of_first_engagement",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "unsubscribed_from_all_email",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "updated_by_user_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "verified_email",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "website_url",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "whatsapp_phone_number",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "work_email",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sales_activity",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_order",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company_primary",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact_create_attribution",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sequence_enrollment",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "billing_contact",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_invoice",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_cart",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_form_submission",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sms_message",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_postal_mail",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_partner_client",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "billing_contact1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_call",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_signer",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_quote",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_customer_success_alert",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_task",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_link",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_data_privacy_consent",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_social_profile",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_campaign",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_create_attribution",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_abandoned_cart",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_ticket",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_meeting",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "links_to_sales_task_that_is_based_on_the_contact_hidden",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_email",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_revenue_attribution",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_lead",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_data_privacy_request",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_session",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_communication",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_with_primary_contact",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_survey_response",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_subscription",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_note",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_file",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sales_activity_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_order_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company_ids_primary",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact_create_attribution_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sequence_enrollment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "billing_contact_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_invoice_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_cart_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_form_submission_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sms_message_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_postal_mail_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_partner_client_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "billing_contact_ids1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_call_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "contact_signer_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_quote_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_customer_success_alert_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_task_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_link_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_data_privacy_consent_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_social_profile_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_campaign_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_create_attribution_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_abandoned_cart_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_ticket_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_meeting_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "links_to_sales_task_that_is_based_on_the_contact_hidden_ids",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_email_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_revenue_attribution_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_lead_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_data_privacy_request_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_session_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_communication_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "lead_with_primary_contact_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_survey_response_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_subscription_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_note_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_file_ids",
+      "data_type": "text",
+      "nullable": true
+    }
+  ],
+  "opportunity": [
+    {
+      "column_name": "name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "amountAmountMicros",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "amountCurrencyCode",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "closeDate",
+      "data_type": "timestamp with time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "stage",
+      "data_type": "USER-DEFINED",
+      "nullable": false
+    },
+    {
+      "column_name": "position",
+      "data_type": "double precision",
+      "nullable": false
+    },
+    {
+      "column_name": "createdBySource",
+      "data_type": "USER-DEFINED",
+      "nullable": false
+    },
+    {
+      "column_name": "createdByWorkspaceMemberId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "createdByName",
+      "data_type": "text",
+      "nullable": false
+    },
+    {
+      "column_name": "createdByContext",
+      "data_type": "jsonb",
+      "nullable": true
+    },
+    {
+      "column_name": "searchVector",
+      "data_type": "tsvector",
+      "nullable": true
+    },
+    {
+      "column_name": "id",
+      "data_type": "uuid",
+      "nullable": false
+    },
+    {
+      "column_name": "createdAt",
+      "data_type": "timestamp with time zone",
+      "nullable": false
+    },
+    {
+      "column_name": "updatedAt",
+      "data_type": "timestamp with time zone",
+      "nullable": false
+    },
+    {
+      "column_name": "deletedAt",
+      "data_type": "timestamp with time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "companyId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "pointOfContactId",
+      "data_type": "uuid",
+      "nullable": true
+    },
+    {
+      "column_name": "abandoned_cart_url",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "amount_in_company_currency",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "annual_contract_value",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "annual_recurring_revenue",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "campaign_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "closed_lost_reason",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "closed_won_count",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "closed_won_reason",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "created_by_user_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "date_of_last_meeting_booked_in_meetings_tool",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "days_to_close",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_collaborator",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_description",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_owner",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_probability",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "deal_type",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "discount_savings",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "ecommerce_deal",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "exchange_rate",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "forecast_amount",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "forecast_category",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "forecast_probability",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "hubspot_team",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "is_closed_numeric",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "is_closed_lost",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "is_closed_won",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "is_deal_closed",
+      "data_type": "numeric",
+      "nullable": true
+    },
+    {
+      "column_name": "is_open_numeric",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "last_activity_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "last_contacted",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_approval_status",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_data_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_data_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "latest_traffic_source_timestamp",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "medium_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "merged_deal_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "monthly_recurring_revenue",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "next_activity",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "next_activity_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "next_meeting",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "next_meeting_name",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "next_meeting_start_time",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "next_step",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_associated_contacts",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_associated_line_items",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_sales_activities",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "number_of_times_contacted",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "order_number",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source_drill_down_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "original_traffic_source_drill_down_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "owner_assigned_date",
+      "data_type": "timestamp without time zone",
+      "nullable": true
+    },
+    {
+      "column_name": "pipeline",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "priority",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_1",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_2",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "record_source_detail_3",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "shipment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "source_of_last_booking_in_meetings_tool",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "source_store",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "tag",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "tax_price",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "total_contract_value",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "updated_by_user_id",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "weighted_amount",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "weighted_amount_in_company_currency",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "weighted_open_pipeline_in_company_currency",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "links_to_sales_task_that_is_based_on_the_deal_hidden",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_cart",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_session",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_meeting",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_survey_response",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_invoice",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sales_activity",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_split",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_task",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_approval",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_email",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_discount",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_create_attribution",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_ticket",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_forecast",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_communication",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_quote",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_postal_mail",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_subscription",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_link",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_partner_client",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_product",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sequence_enrollment",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_schedule_installment",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_note",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_contact",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_call",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_line_item",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company_primary",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_order",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_campaign",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_revenue_attribution",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "links_to_sales_task_that_is_based_on_the_deal_hidden_ids",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_cart_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_ids",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_conversation_session_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_meeting_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_survey_response_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_invoice_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sales_activity_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_split_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_task_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_approval_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_email_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_discount_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_deal_create_attribution_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_ticket_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_forecast_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_communication_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_quote_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_postal_mail_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_subscription_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_link_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_partner_client_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_product_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_sequence_enrollment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_payment_schedule_installment_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_note_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_call_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_line_item_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_company_ids_primary",
+      "data_type": "integer",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_order_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_campaign_ids",
+      "data_type": "text",
+      "nullable": true
+    },
+    {
+      "column_name": "associated_revenue_attribution_ids",
+      "data_type": "text",
+      "nullable": true
+    }
+  ]
+}

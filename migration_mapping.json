@@ -1,0 +1,143 @@
+{
+  "companies": {
+    "id": {
+      "hubspot": "Record ID",
+      "twenty": "id (UUID)",
+      "transform": "Generate new UUID, create mapping table"
+    },
+    "name": {
+      "hubspot": "Company name",
+      "twenty": "name",
+      "transform": "Direct copy"
+    },
+    "domainName": {
+      "hubspot": "Company Domain Name",
+      "twenty": "domainName",
+      "transform": "Direct copy"
+    },
+    "employees": {
+      "hubspot": "Number of Employees",
+      "twenty": "employees",
+      "transform": "Convert to integer"
+    },
+    "linkedinLink": {
+      "hubspot": "LinkedIn Company Page",
+      "twenty": "linkedinLink",
+      "transform": "Direct copy (URL)"
+    },
+    "address": {
+      "hubspot": "City",
+      "twenty": "address",
+      "transform": "Use City field (could enhance with State/Country)"
+    },
+    "createdAt": {
+      "hubspot": "Create Date",
+      "twenty": "createdAt",
+      "transform": "Parse timestamp, convert to ISO 8601"
+    },
+    "updatedAt": {
+      "hubspot": "Last Modified Date",
+      "twenty": "updatedAt",
+      "transform": "Parse timestamp, convert to ISO 8601"
+    }
+  },
+  "contacts": {
+    "id": {
+      "hubspot": "Record ID",
+      "twenty": "id (UUID)",
+      "transform": "Generate new UUID, create mapping table"
+    },
+    "firstName": {
+      "hubspot": "First Name",
+      "twenty": "name.firstName",
+      "transform": "Direct copy"
+    },
+    "lastName": {
+      "hubspot": "Last Name",
+      "twenty": "name.lastName",
+      "transform": "Direct copy"
+    },
+    "email": {
+      "hubspot": "Email",
+      "twenty": "emails.primaryEmail",
+      "transform": "Set as primary email"
+    },
+    "phone": {
+      "hubspot": "Phone Number",
+      "twenty": "phones.primaryPhoneNumber",
+      "transform": "Format phone number"
+    },
+    "jobTitle": {
+      "hubspot": "Job Title",
+      "twenty": "jobTitle",
+      "transform": "Direct copy"
+    },
+    "city": {
+      "hubspot": "City",
+      "twenty": "city",
+      "transform": "Direct copy"
+    },
+    "companyId": {
+      "hubspot": "Associated Company IDs",
+      "twenty": "companyId (UUID FK)",
+      "transform": "Look up Company UUID from mapping table"
+    },
+    "createdAt": {
+      "hubspot": "Create Date",
+      "twenty": "createdAt",
+      "transform": "Parse timestamp"
+    },
+    "updatedAt": {
+      "hubspot": "Last Modified Date",
+      "twenty": "updatedAt",
+      "transform": "Parse timestamp"
+    }
+  },
+  "deals": {
+    "id": {
+      "hubspot": "Record ID",
+      "twenty": "id (UUID)",
+      "transform": "Generate new UUID"
+    },
+    "name": {
+      "hubspot": "Deal Name",
+      "twenty": "name",
+      "transform": "Direct copy"
+    },
+    "amount": {
+      "hubspot": "Amount",
+      "twenty": "amount.amountMicros",
+      "transform": "Convert to micros (*1,000,000), set currencyCode"
+    },
+    "closeDate": {
+      "hubspot": "Close Date",
+      "twenty": "closeDate",
+      "transform": "Parse date, convert to ISO format"
+    },
+    "stage": {
+      "hubspot": "Deal Stage",
+      "twenty": "stage",
+      "transform": "Map HubSpot stages \u2192 Twenty (NEW/SCREENING/MEETING/PROPOSAL/CUSTOMER)"
+    },
+    "companyId": {
+      "hubspot": "Associated Company IDs",
+      "twenty": "companyId (UUID FK)",
+      "transform": "Look up Company UUID from mapping table"
+    },
+    "pointOfContactId": {
+      "hubspot": "Associated Contact IDs",
+      "twenty": "pointOfContactId (UUID FK)",
+      "transform": "Look up Contact UUID from mapping table"
+    },
+    "createdAt": {
+      "hubspot": "Create Date",
+      "twenty": "createdAt",
+      "transform": "Parse timestamp"
+    },
+    "updatedAt": {
+      "hubspot": "Last Modified Date",
+      "twenty": "updatedAt",
+      "transform": "Parse timestamp"
+    }
+  }
+}
