@@ -1,135 +1,230 @@
-<p align="center">
-  <a href="https://www.twenty.com">
-    <img src="./packages/twenty-website/public/images/core/logo.svg" width="100px" alt="Twenty logo" />
-  </a>
-</p>
 
-<h2 align="center" >The #1 Open-Source CRM </h2>
+# Twenty – Local Development & Custom Container Deployment
 
-<p align="center"><a href="https://twenty.com">🌐 Website</a> · <a href="https://docs.twenty.com">📚 Documentation</a> · <a href="https://github.com/orgs/twentyhq/projects/1"><img src="./packages/twenty-website/public/images/readme/planner-icon.svg" width="12" height="12"/> Roadmap </a> · <a href="https://discord.gg/cx5n4Jzs57"><img src="./packages/twenty-website/public/images/readme/discord-icon.svg" width="12" height="12"/> Discord</a> · <a href="https://www.figma.com/file/xt8O9mFeLl46C5InWwoMrN/Twenty"><img src="./packages/twenty-website/public/images/readme/figma-icon.png"  width="12" height="12"/>  Figma</a></p>
-<br />
+This guide explains how to:
 
+- Run Twenty (frontend + backend) **locally** for development.  
+- **Build, push, and deploy** a custom backend image to your existing AKS cluster after changing UI or server code.
 
-<p align="center">
-  <a href="https://www.twenty.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/github-cover-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/github-cover-light.png" />
-      <img src="./packages/twenty-website/public/images/readme/github-cover-light.png" alt="Cover" />
-    </picture>
-  </a>
-</p>
+The Vars we need:
 
-<br />
+- Repo: `github.com/your-org/twenty` (forked)
+- Registry: Docker Hub user `zeeshanhs`.  
+- Azure Postgres server: `twentypsql.postgres.database.azure.com`, DB `twenty2`.  
+- AKS already running a `twenty-server` Deployment.
 
-# Installation
+Adjust names where needed.
 
-See:
-🚀 [Self-hosting](https://docs.twenty.com/developers/self-hosting/docker-compose)
-🖥️ [Local Setup](https://docs.twenty.com/developers/local-setup)
+***
 
-# Does the world need another CRM?
+## 1. Prerequisites
 
-We built Twenty for three reasons:
+- Node.js **24.x** (use `nvm`).
+- Yarn (classic or Berry).
+- Docker Desktop (or any Docker engine).
+- Access to:
+  - Your Twenty fork.
+  - Azure Postgres (`twentypsql` / `twenty2`).
+  - AKS cluster (`kubectl` context configured).
+  - Docker Hub account `zeeshanhs` (or your actual username).
 
-**CRMs are too expensive, and users are trapped.** Companies use locked-in customer data to hike prices. It shouldn't be that way.
+***
 
-**A fresh start is required to build a better experience.** We can learn from past mistakes and craft a cohesive experience inspired by new UX patterns from tools like Notion, Airtable or Linear.
+## 2. Local development
 
-**We believe in Open-source and community.** Hundreds of developers are already building Twenty together. Once we have plugin capabilities, a whole ecosystem will grow around it.
+### 2.1 Clone and install dependencies
 
-<br />
+```bash
+# Clone your fork
+git clone git@github.com:your-org/twenty.git
+cd twenty
 
-# What You Can Do With Twenty
+# Use Node 24
+nvm use 24
 
-Please feel free to flag any specific needs you have by creating an issue.
+# Install dependencies
+yarn install
+```
 
-Below are a few features we have implemented to date:
+### 2.2 Configure environment
 
-+ [Personalize layouts with filters, sort, group by, kanban and table views](#personalize-layouts-with-filters-sort-group-by-kanban-and-table-views)
-+ [Customize your objects and fields](#customize-your-objects-and-fields)
-+ [Create and manage permissions with custom roles](#create-and-manage-permissions-with-custom-roles)
-+ [Automate workflow with triggers and actions](#automate-workflow-with-triggers-and-actions)
-+ [Emails, calendar events, files, and more](#emails-calendar-events-files-and-more)
+Copy example env files:
 
+```bash
+cp packages/twenty-front/.env.example  packages/twenty-front/.env
+cp packages/twenty-server/.env.example packages/twenty-server/.env
+```
 
-## Personalize layouts with filters, sort, group by, kanban and table views
+Edit `packages/twenty-server/.env` and set the DB URL. For dev you can use the same Azure DB (just be aware you’re touching the “real” DB):
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/views-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/views-light.png" />
-      <img src="./packages/twenty-website/public/images/readme/views-light.png" alt="Companies Kanban Views" />
-    </picture>
-</p>
+```env
+PG_DATABASE_URL=postgresql://twentyadmin:YOUR_PASSWORD@twentypsql.postgres.database.azure.com:5432/twenty2?sslmode=require
+```
 
-## Customize your objects and fields
+Optionally also set:
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/data-model-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/data-model-light.png" />
-      <img src="./packages/twenty-website/public/images/readme/data-model-light.png" alt="Setting Custom Objects" />
-    </picture>
-</p>
+```env
+DATABASE_URL=${PG_DATABASE_URL}
+```
 
-## Create and manage permissions with custom roles
+### 2.3 Initialize the database (only if empty)
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/permissions-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/permissions-light.png" />
-      <img src="./packages/twenty-website/public/images/readme/permissions-light.png" alt="Permissions" />
-    </picture>
-</p>
+If `twenty2` is fresh and you need core tables and seed data:
 
-## Automate workflow with triggers and actions
+```bash
+# From repo root
+export PG_DATABASE_URL='postgresql://twentyadmin:YOUR_PASSWORD@twentypsql.postgres.database.azure.com:5432/twenty2?sslmode=require'
+export DATABASE_URL="$PG_DATABASE_URL"
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/workflows-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/workflows-light.png" />
-      <img src="./packages/twenty-website/public/images/readme/workflows-light.png" alt="Workflows" />
-    </picture>
-</p>
+# Reset + migrations
+yarn nx run twenty-server:database:reset
+yarn database:migrate:prod
+```
 
-## Emails, calendar events, files, and more
+This creates the `core` schema, workspace schemas, and all Twenty tables.
 
-<p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/plus-other-features-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/twentyhq/twenty/refs/heads/main/packages/twenty-website/public/images/readme/plus-other-features-light.png" />
-      <img src="./packages/twenty-website/public/images/readme/plus-other-features-light.png" alt="Other Features" />
-    </picture>
-</p>
+### 2.4 Run backend and frontend locally
 
-<br />
+In one terminal (backend):
 
-# Stack
-- [TypeScript](https://www.typescriptlang.org/)
-- [Nx](https://nx.dev/)
-- [NestJS](https://nestjs.com/), with [BullMQ](https://bullmq.io/), [PostgreSQL](https://www.postgresql.org/), [Redis](https://redis.io/)
-- [React](https://reactjs.org/), with [Recoil](https://recoiljs.org/), [Emotion](https://emotion.sh/) and [Lingui](https://lingui.dev/)
+```bash
+cd twenty
+nvm use 24
 
+yarn nx run twenty-server:start
+```
 
+In another terminal (frontend):
 
-# Thanks
+```bash
+cd twenty
+nvm use 24
 
-<p align="center">
-  <a href="https://www.chromatic.com/"><img src="./packages/twenty-website/public/images/readme/chromatic.png" height="30" alt="Chromatic" /></a>
-  <a href="https://greptile.com"><img src="./packages/twenty-website/public/images/readme/greptile.png" height="30" alt="Greptile" /></a>
-  <a href="https://sentry.io/"><img src="./packages/twenty-website/public/images/readme/sentry.png" height="30" alt="Sentry" /></a>
-  <a href="https://crowdin.com/"><img src="./packages/twenty-website/public/images/readme/crowdin.png" height="30" alt="Crowdin" /></a>
-</p>
+yarn nx run twenty-front:start
+```
 
-  Thanks to these amazing services that we use and recommend for UI testing (Chromatic), code review (Greptile), catching bugs (Sentry) and translating (Crowdin).
+By default (check docs / env):
 
+- Backend: `http://localhost:3000`  
+- Frontend: `http://localhost:3001`
 
-# Join the Community
+Use this setup while editing UI and server code; changes will hot‑reload.
 
-- Star the repo
-- Subscribe to releases (watch -> custom -> releases)
-- Follow us on [Twitter](https://twitter.com/twentycrm) or [LinkedIn](https://www.linkedin.com/company/twenty/)
-- Join our [Discord](https://discord.gg/cx5n4Jzs57)
-- Improve translations on [Crowdin](https://twenty.crowdin.com/twenty)
-- [Contributions](https://github.com/twentyhq/twenty/contribute) are, of course, most welcome!
+***
+
+## 3. Build and push a custom backend image
+
+After you’re happy with your changes locally, build a new Docker image and push it to your registry.
+
+### 3.1 Choose an image name
+
+For Docker Hub user `zeeshanhs`, use:
+
+```bash
+export IMAGE_NAME=zeeshanhs/twenty-server:v0.1.0
+```
+
+- `zeeshanhs` – your Docker Hub username.  
+- `twenty-server` – repo name in Docker Hub.  
+- `v0.1.0` – any tag you like (`feature-x`, `2025-12-15`, etc.), all lowercase, no spaces.
+
+### 3.2 Build the image from your fork
+
+From the repo root:
+
+```bash
+cd twenty
+
+docker build \
+  -f packages/twenty-docker/Dockerfile \
+  -t "$IMAGE_NAME" .
+```
+
+This Dockerfile builds the server (and usually bundles the frontend build) from your fork.
+
+### 3.3 Log in and push
+
+```bash
+docker login           # enters Docker Hub credentials for user `zeeshanhs`
+docker push "$IMAGE_NAME"
+```
+
+You should see the image appear at:  
+`https://hub.docker.com/r/zeeshanhs/twenty-server/tags`
+
+***
+
+## 4. Deploy the new image to AKS
+
+Assume you already have a Deployment file (for example `k8s/twenty-server-deploy.yaml`) that currently uses the official image.
+
+### 4.1 Update the Deployment to use your image
+
+Edit your Deployment YAML:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twenty-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: twenty-server
+  template:
+    metadata:
+      labels:
+        app: twenty-server
+    spec:
+      containers:
+        - name: twenty-server
+          image: zeeshanhs/twenty-server:v0.1.0   # ← your custom image
+          env:
+            - name: PG_DATABASE_URL
+              value: "postgresql://twentyadmin:YOUR_PASSWORD@twentypsql.postgres.database.azure.com:5432/twenty2?sslmode=require"
+            - name: DATABASE_URL
+              value: "postgresql://twentyadmin:YOUR_PASSWORD@twentypsql.postgres.database.azure.com:5432/twenty2?sslmode=require"
+            # …other environment variables (SERVER_URL, etc.)
+```
+
+### 4.2 Apply and roll the deployment
+
+```bash
+# Apply the updated manifest
+kubectl apply -f k8s/twenty-server-deploy.yaml
+
+# Restart pods to force pull the new image (optional but explicit)
+kubectl delete pod -l app=twenty-server
+
+# Watch status
+kubectl get pods -l app=twenty-server
+kubectl logs -l app=twenty-server --tail=80
+```
+
+Once the pod is `Running` and logs look healthy, your public endpoint  
+(e.g. `http://20.50.189.151` or your custom domain) serves the new code.
+
+***
+
+## 5. Typical development → deploy loop
+
+1. **Pull latest** from your fork’s main branch.  
+2. **Create feature branch**: `git checkout -b feature/new-ui`.  
+3. **Develop locally**:
+   - `yarn nx run twenty-server:start`
+   - `yarn nx run twenty-front:start`
+4. **Build and push image**:
+   ```bash
+   export IMAGE_NAME=zeeshanhs/twenty-server:feature-new-ui-1
+   docker build -f packages/twenty-docker/Dockerfile -t "$IMAGE_NAME" .
+   docker push "$IMAGE_NAME"
+   ```
+5. **Update AKS Deployment** `image:` to this tag and apply.  
+6. **Verify**:
+   - `kubectl logs -l app=twenty-server --tail=80`
+   - Open the app in browser and test the new UI / behavior.
+
+***
+
+If you paste your current Deployment YAML and Docker Hub username, this README can be adjusted even more precisely (paths, image names, service names), but this version should already be directly usable.
