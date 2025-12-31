@@ -49858,12 +49858,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:^6.11.0, qs@npm:^6.11.1, qs@npm:^6.11.2, qs@npm:^6.12.3, qs@npm:^6.14.0, qs@npm:^6.4.0, qs@npm:^6.7.0":
+"qs@npm:^6.11.0, qs@npm:^6.11.1, qs@npm:^6.12.3, qs@npm:^6.14.0, qs@npm:^6.4.0, qs@npm:^6.7.0":
   version: 6.14.0
   resolution: "qs@npm:6.14.0"
   dependencies:
     side-channel: "npm:^1.1.0"
   checksum: 10c0/8ea5d91bf34f440598ee389d4a7d95820e3b837d3fd9f433871f7924801becaa0cd3b3b4628d49a7784d06a8aea9bc4554d2b6d8d584e2d221dc06238a42909c
+  languageName: node
+  linkType: hard
+
+"qs@npm:^6.14.1":
+  version: 6.14.1
+  resolution: "qs@npm:6.14.1"
+  dependencies:
+    side-channel: "npm:^1.1.0"
+  checksum: 10c0/0e3b22dc451f48ce5940cbbc7c7d9068d895074f8c969c0801ac15c1313d1859c4d738e46dc4da2f498f41a9ffd8c201bd9fb12df67799b827db94cc373d2613
   languageName: node
   linkType: hard
 
@@ -56060,7 +56069,7 @@ __metadata:
     monaco-editor-auto-typings: "npm:^0.4.5"
     optionator: "npm:^0.9.1"
     playwright: "npm:^1.56.1"
-    qs: "npm:^6.11.2"
+    qs: "npm:^6.14.1"
     react-data-grid: "npm:7.0.0-beta.13"
     react-datepicker: "npm:^6.7.1"
     react-dropzone: "npm:^14.2.3"
@@ -56352,7 +56361,7 @@ __metadata:
     handlebars: "npm:^4.7.8"
     libphonenumber-js: "npm:^1.10.26"
     lodash.camelcase: "npm:^4.3.0"
-    qs: "npm:^6.11.2"
+    qs: "npm:^6.14.1"
     react-router-dom: "npm:^6.4.4"
     transliteration: "npm:^2.3.5"
     tsx: "npm:^4.19.3"
