@@ -224,7 +224,3 @@ Once the pod is `Running` and logs look healthy, your public endpoint
 6. **Verify**:
    - `kubectl logs -l app=twenty-server --tail=80`
    - Open the app in browser and test the new UI / behavior.
-
-***
-
-If you paste your current Deployment YAML and Docker Hub username, this README can be adjusted even more precisely (paths, image names, service names), but this version should already be directly usable.
